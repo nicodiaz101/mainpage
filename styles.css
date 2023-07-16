@@ -1,7 +1,58 @@
-h1{
-    margin: 10;
-    font-family: "elza-text", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+body {
+    background: url(img/DSC_9703\ Wallpaper.jpg) no-repeat center center fixed;
+    background-size: cover;
     align-items: center;
+    justify-content: center;
+}
+.logoimg {
+    border-radius: 50%;
+    width: 150px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+}
+.logo {
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+h1 {
+    font-family: elza-text, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFF;
+}
+.profesion {
+    font-family: soleil, sans-serif; 
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    color: #FFFF;
+}
+h2 {
+    font-family: urbane, sans-serif; 
+    font-style: normal;
+    font-weight: 600;
+    color: #FFFF;
+    text-align: center;
+}
+.largebuttons {
+    text-decoration: none;
+    font-family: sofia-pro, sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+}
+footer {
+    font-family: basic-sans, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    text-align: center;
+    font-size: 10px;
+    color: #FFFF;
+}
+.socialbuttons {
+    text-decoration: none;
+    text-align: center;
 }
