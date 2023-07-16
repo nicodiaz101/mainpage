@@ -3,6 +3,9 @@ body {
     background-size: cover;
     align-items: center;
     justify-content: center;
+    position: relative;
+    min-height: 97vh;
+    padding-bottom: 0.3em;
 }
 .logoimg {
     border-radius: 50%;
@@ -37,12 +40,32 @@ h2 {
     text-align: center;
 }
 .largebuttons {
-    text-decoration: none;
-    font-family: sofia-pro, sans-serif; 
+    font-family: sofia-pro, sans-serif;
+    display: flex;
+    justify-content: center;
     font-style: normal;
     font-weight: 400;
     text-align: center;
-    padding: 10px;
+}
+.largebuttons a {
+    text-decoration: none;
+    color: #000;
+    background-color: #FFFF;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 30px;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+}
+.largebuttons a:hover {
+    transform: scale(1.2,1.2);
+    color: #FFFF;
+    background-color: #000;
 }
 footer {
     font-family: basic-sans, sans-serif;
@@ -51,8 +74,47 @@ footer {
     text-align: center;
     font-size: 10px;
     color: #FFFF;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .socialbuttons {
+    display: flex;
+    justify-content: center;
+}
+.socialbuttons a {
     text-decoration: none;
+    color: #FFFF;
+    font-size: 20px;
+    background-color: #707070;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     text-align: center;
+    line-height: 40px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.socialbuttons a:hover {
+    transform: scale(1.2,1.2);
+    color: #000;
+    background-color: aliceblue;
+}
+svg {
+    fill: #FFFF;
+}
+svg:hover {
+    fill: #000;
+}
+@media (max-height:670px) {
+    body {
+        padding-bottom: 1em;
+    }
+}
+@media (min-width:700px) {
+    .socialbuttons a{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }
