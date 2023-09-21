@@ -93,7 +93,7 @@ footer {
     text-align: center;
     line-height: 40px;
     box-shadow: 2px 2px 5px rgba(0,0,0,.5);
-    margin: 8px;
+    margin: 13px;
     transition: all 0.3s ease-in-out;
 }
 .socialbuttons a:hover {
