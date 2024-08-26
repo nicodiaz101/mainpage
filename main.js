@@ -5,3 +5,10 @@ function FbotonOn() {
     else 
         uno.innerHTML = 'Portfolio'; 
   }
+function FbotonOn2() {
+    var dos = document.getElementById('disablebotton2');
+    if (dos.innerHTML == 'Blog') 
+        dos.innerHTML = 'No disponible';
+    else 
+        dos.innerHTML = 'Blog'; 
+}
