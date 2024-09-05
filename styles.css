@@ -1,0 +1,17 @@
+/* Header */
+header {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    text-decoration: none;
+}
+.logo img {
+    height: 4rem;
+    margin-right: 1rem;
+}
