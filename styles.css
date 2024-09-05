@@ -6,7 +6,6 @@ body {
     justify-content: center;
     position: relative;
     min-height: 97vh;
-    padding-bottom: 0.3em;
 }
 /* Header */
 header {
@@ -113,7 +112,214 @@ header {
     color: #000;
     background-color: aliceblue;
 }
+/* To down section */
+.to-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 30vh;
+    font-family: 'Reddit Sans', sans-serif;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.down_button{
+    padding-top: 2rem;
+    font-size: 2rem
+}
 
+
+/* Blog section*/
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    background-color: #202124;
+}
+.blog h2 {
+    font-family: 'Urbanist', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+}
+.blog p {
+    font-family: 'Reddit Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.blog a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Alexandria', sans-serif;
+    color: #000;
+    background-color: #FFFF;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 40px;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+}
+.blog a:hover {
+    transform: scale(1.2,1.2);
+    color: #FFFF;
+    background-color: #000;
+}
+
+/*Portfolio section*/
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    background-color: #202124;
+}
+.portfolio h2 {
+    font-family: 'Urbanist', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+}
+.portfolio p {
+    font-family: 'Reddit Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.portfolio a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Alexandria', sans-serif;
+    color: #000;
+    background-color: #FFFF;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 2rem;
+    line-height: 40px;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+}
+.portfolio a:hover {
+    transform: scale(1.2,1.2);
+    color: #FFFF;
+    background-color: #000;
+}
+/* Aca falta la galeria de imagenes que usa glider.js */
+
+/* Contact section */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    background-color: #202124;
+}
+.contact h2 {
+    font-family: 'Urbanist', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+}
+.contact p {
+    font-family: 'Reddit Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.contact a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Alexandria', sans-serif;
+    color: #000;
+    background-color: #FFFF;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 2rem;
+    line-height: 40px;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+}
+.contact a:hover {
+    transform: scale(1.2,1.2);
+    color: #FFFF;
+    background-color: #000;
+}
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: #202124;
+    text-decoration: none;
+}
+.nombre {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    left: 0;
+}
+.nav-footer-list {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    flex-direction: column;
+    font-family: 'Reddit Sans', sans-serif;
+    padding-right: 2rem;
+
+}
+.nav-footer-list li a {
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+.nav-footer-list li {
+    margin-bottom: 20px;
+}
+.copyright {
+    font-family: 'Reddit Sans', sans-serif;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 0.6rem;
+}
 
 
 @media (min-width:700px) {
