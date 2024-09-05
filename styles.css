@@ -1,5 +1,12 @@
 body {
     margin: 0;
+    background: url(img/DSC_9703\ Wallpaper.jpg) no-repeat center center fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 97vh;
+    padding-bottom: 0.3em;
 }
 /* Header */
 header {
