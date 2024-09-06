@@ -84,8 +84,9 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5rem;
+    padding: 4rem;
     padding-top: 7rem;
+    padding-bottom: 5rem;
     font-family: 'Urbanist', sans-serif;
     color: #fff;
     font-size: 20px;
@@ -374,6 +375,99 @@ footer {
     .nav-list li {
         margin-bottom: 0;
     }
+    /* Redes sociales box */
+    .redes_box {
+        font-size: 25px;
+    }
+    .redes_buttons a {
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    /* To down section */
+    .to-down {
+        font-size: 1.3rem;
+    }
+    .down_button {
+        padding-top: 1rem;
+    }
+    /* Blog section */
+    .blog h2 {
+        font-size: 2.5rem;
+    }
+    .blog p {
+        font-size: 1.2rem;
+    }
+    .blog a {
+        font-size: 18px;
+        width: 130px;
+        height: 45px;
+        margin-left: 45px;
+        margin-right: 45px;
+        line-height: 45px;
+    }
+    /* Portfolio section */
+    .portfolio h2 {
+        font-size: 2.5rem;
+    }
+    .portfolio p {
+        font-size: 1.2rem;
+    }
+    .portfolio a {
+        font-size: 18px;
+        width: 150px;
+        height: 45px;
+        margin-left: 45px;
+        margin-right: 45px;
+        margin-top: 2rem;
+        line-height: 45px;
+    }
+    /* Contact section */
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+    .contact p {
+        font-size: 1.2rem;
+    }
+    .contact a {
+        font-size: 18px;
+        width: 300px;
+        height: 45px;
+        margin-left: 45px;
+        margin-right: 45px;
+        margin-top: 2rem;
+        line-height: 45px;
+    }
+    /* Footer */
+    .nombre {
+        font-size: 1.2rem;
+        position: absolute;
+        left: 0;
+        padding-left: 2rem;
+    }
+    .nav-footer-list {
+        padding-right: 4rem;
+
+    }
+    .nav-footer-list li a {
+        font-size: 1.1rem;
+    }
+    .social {
+        position: absolute;
+        flex-direction: row;
+        right: 0;
+        padding-right: 2rem;
+    }
+    .social a {
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .copyright {
+        padding-top: 1rem;
+    }
 }
 @media (min-width: 985px) {
     /*header*/
@@ -383,5 +477,16 @@ footer {
         font-size: 1.5rem;
         padding-left: 1rem;
         font-family: 'Montserrat', sans-serif;
+    }
+    .social {
+        padding-right: 5rem;
+    }
+}
+@media (min-height: 900px) {
+    .redes_box {
+        padding-bottom: 10rem;
+    }
+    .to-down {
+        padding-bottom: 40vh;
     }
 }

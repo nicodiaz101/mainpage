@@ -184,6 +184,36 @@ footer {
     .nav-list li {
         margin-bottom: 0;
     }
+
+    /* Footer */
+    .nombre {
+        font-size: 1.2rem;
+        position: absolute;
+        left: 0;
+        padding-left: 2rem;
+    }
+    .nav-footer-list {
+        padding-right: 4rem;
+
+    }
+    .nav-footer-list li a {
+        font-size: 1.1rem;
+    }
+    .social {
+        position: absolute;
+        flex-direction: row;
+        right: 0;
+        padding-right: 2rem;
+    }
+    .social a {
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .copyright {
+        padding-top: 1rem;
+    }
 }
 @media (min-width: 985px) {
     /*header*/
@@ -193,5 +223,8 @@ footer {
         font-size: 1.5rem;
         padding-left: 1rem;
         font-family: 'Montserrat', sans-serif;
+    }
+    .social {
+        padding-right: 5rem;
     }
 }
