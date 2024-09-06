@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: url(img/DSC_9703\ Wallpaper.jpg) no-repeat center center fixed;
+    background-color: #202124;
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -75,6 +75,18 @@ header {
 .close-button {
    margin-bottom: 1.5rem;
 }
+/*Texto */
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    font-family: 'Reddit Sans', sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+}
 
 
 
@@ -84,7 +96,6 @@ header {
 /* Footer */
 footer {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
