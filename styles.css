@@ -291,9 +291,6 @@ footer {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    left: 0;
 }
 .nav-footer-list {
     display: flex;
@@ -320,8 +317,32 @@ footer {
     color: #fff;
     font-size: 0.6rem;
 }
-
-
+.social{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+.social a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    background-color: #FFFF ;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    margin: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.social a:hover {
+    transform: scale(1.2,1.2);
+    color: #FFFF;
+    background-color: #000;
+}
 @media (min-width:700px) {
     /* Header */
     .nav-list {
