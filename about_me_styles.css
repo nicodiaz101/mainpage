@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    background: url(img/DSC_9703\ Wallpaper.jpg) no-repeat center center fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 97vh;
+}
+/* Header */
+header {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: #202124;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    text-decoration: none;
+}
+.logo img {
+    height: 4rem;
+    margin-right: 1rem;
+}
+.logo h1 {
+    display: none;
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: end;
+    font-family: 'Reddit Sans', sans-serif;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.nav-list li {
+    margin-bottom: 20px;
+}
+.nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    gap: 1rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 3rem;
+    background-color: #202124;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
+    transform: translate(-1%);
+    transition: transform .3s, opacity .3s, visibility .3s;
+}
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+}
+.open-button, .close-button {
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.close-button {
+   margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: #202124;
+    text-decoration: none;
+}
+.nombre {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+}
+.nav-footer-list {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    flex-direction: column;
+    font-family: 'Reddit Sans', sans-serif;
+    padding-right: 2rem;
+
+}
+.nav-footer-list li a {
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+.nav-footer-list li {
+    margin-bottom: 20px;
+}
+.copyright {
+    font-family: 'Reddit Sans', sans-serif;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 0.6rem;
+}
+.social{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+.social a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    background-color: #FFFF ;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    margin: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.social a:hover {
+    transform: scale(1.2,1.2);
+    color: #FFFF;
+    background-color: #000;
+}
+@media (min-width:700px) {
+    /* Header */
+    .nav-list {
+        flex-direction: row;
+        margin-right: -3rem;
+    }
+    .nav {
+        position: relative;
+        gap: 0;
+        background-color: transparent;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        flex-direction: row;
+        transition: none;
+    }
+    .open-button, .close-button {
+        display: none;
+    }
+    .nav-list li a {
+        padding: 5px;
+    }
+    .nav-list li {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 985px) {
+    /*header*/
+    .logo h1{
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
