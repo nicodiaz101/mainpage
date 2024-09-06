@@ -7,6 +7,9 @@ body {
     position: relative;
     min-height: 97vh;
 }
+html {
+    scroll-behavior: smooth;
+}
 /* Header */
 header {
     display: flex;
@@ -126,7 +129,10 @@ header {
 }
 .down_button{
     padding-top: 2rem;
-    font-size: 2rem
+    font-size: 2.2rem
+}
+.down_button a {
+    text-decoration: none;
 }
 
 
