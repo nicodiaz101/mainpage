@@ -233,8 +233,18 @@ header {
     color: #FFFF;
     background-color: #000;
 }
-/* Aca falta la galeria de imagenes que usa glider.js */
-
+/* glider.js */
+.glider-contain{
+    padding: 30px;
+    max-width: 400px;
+}
+.glider-prev,
+.glider-next {
+    display: none
+}
+.glider{
+    overflow: hidden;
+}
 /* Contact section */
 .contact {
     display: flex;
@@ -422,6 +432,19 @@ footer {
         margin-right: 45px;
         margin-top: 2rem;
         line-height: 45px;
+    }
+    /* glider.js */
+    .glider-contain {
+        padding: 30px;
+        max-width: 600px;
+    }
+    .glider-prev,
+    .glider-next {
+        display: block;
+        width: 50px;
+        border: none;
+        cursor: pointer;
+        margin-top: 50px;
     }
     /* Contact section */
     .contact h2 {
