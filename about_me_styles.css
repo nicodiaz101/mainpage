@@ -184,7 +184,12 @@ footer {
     .nav-list li {
         margin-bottom: 0;
     }
-
+    /*Texto*/
+    .text {
+        font-size: 1.5rem;
+        margin-right: 3rem;
+        margin-left: 4rem;
+    }
     /* Footer */
     .nombre {
         font-size: 1.2rem;
@@ -226,5 +231,10 @@ footer {
     }
     .social {
         padding-right: 5rem;
+    }
+    /*Texto*/
+    .text {
+        margin-left: 20rem;
+        margin-right: 20rem;
     }
 }
