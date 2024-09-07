@@ -1,88 +1,103 @@
 body {
+    margin: 0;
     background: url(img/DSC_9703\ Wallpaper.jpg) no-repeat center center fixed;
     background-size: cover;
     align-items: center;
     justify-content: center;
     position: relative;
     min-height: 97vh;
-    padding-bottom: 0.3em;
 }
-.logoimg {
-    border-radius: 50%;
-    width: 150px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+html {
+    scroll-behavior: smooth;
+}
+/* Header */
+header {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: #202124;
 }
 .logo {
-    padding: 20px;
     display: flex;
-    text-align: center;
-    justify-content: center;
-}
-h1 {
-    font-family: elza-text, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    text-align: center;
-    color: #FFFF;
-}
-.profesion {
-    font-family: soleil, sans-serif; 
-    font-style: normal;
-    font-weight: 300;
-    text-align: center;
-    color: #FFFF;
-}
-h2 {
-    font-family: urbane, sans-serif; 
-    font-style: normal;
-    font-weight: 600;
-    color: #FFFF;
-    text-align: center;
-}
-.largebuttons {
-    font-family: sofia-pro, sans-serif;
-    display: flex;
-    justify-content: center;
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-}
-.largebuttons a {
-    text-decoration: none;
-    color: #000;
-    background-color: #FFFF;
-    border-radius: 10px;
-    width: 100px;
-    height: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-    line-height: 30px;
-    border-style: solid;
-    border-width: 0.5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
-    transition: all 0.3s ease-in-out;
-}
-.largebuttons a:hover {
-    transform: scale(1.2,1.2);
-    color: #FFFF;
-    background-color: #000;
-}
-footer {
-    font-family: basic-sans, sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    text-align: center;
+    align-items: center;
     font-size: 10px;
-    color: #FFFF;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    text-decoration: none;
 }
-.socialbuttons {
+.logo img {
+    height: 4rem;
+    margin-right: 1rem;
+}
+.logo h1 {
+    display: none;
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: end;
+    font-family: 'Reddit Sans', sans-serif;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.nav-list li {
+    margin-bottom: 20px;
+}
+.nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    gap: 1rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 3rem;
+    background-color: #202124;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
+    transform: translate(-1%);
+    transition: transform .3s, opacity .3s, visibility .3s;
+}
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+}
+.open-button, .close-button {
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.close-button {
+   margin-bottom: 1.5rem;
+}
+/* Redes sociales box*/
+.redes_box {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    font-family: 'Urbanist', sans-serif;
+    color: #fff;
+    font-size: 20px;
 }
-.socialbuttons a {
+.redes_buttons{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.redes_buttons a {
     text-decoration: none;
     color: #FFFF;
     font-size: 20px;
@@ -96,25 +111,405 @@ footer {
     margin: 13px;
     transition: all 0.3s ease-in-out;
 }
-.socialbuttons a:hover {
+.redes_buttons a:hover {
     transform: scale(1.2,1.2);
     color: #000;
     background-color: aliceblue;
 }
-svg {
-    fill: #FFFF;
+/* To down section */
+.to-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 30vh;
+    font-family: 'Reddit Sans', sans-serif;
+    color: #fff;
+    font-size: 1.1rem;
 }
-svg:hover {
-    fill: #000;
+.down_button{
+    padding-top: 2rem;
+    font-size: 2.2rem
 }
-@media (max-height:670px) {
-    body {
-        padding-bottom: 1em;
+.down_button a {
+    text-decoration: none;
+}
+
+
+/* Blog section*/
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    background-color: #202124;
+}
+.blog h2 {
+    font-family: 'Urbanist', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+}
+.blog p {
+    font-family: 'Reddit Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.blog a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Alexandria', sans-serif;
+    color: #000;
+    background-color: #FFFF;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 40px;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+}
+.blog a:hover {
+    transform: scale(1.2,1.2);
+    color: #FFFF;
+    background-color: #000;
+}
+
+/*Portfolio section*/
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    background-color: #202124;
+}
+.portfolio h2 {
+    font-family: 'Urbanist', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+}
+.portfolio p {
+    font-family: 'Reddit Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.portfolio a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Alexandria', sans-serif;
+    color: #000;
+    background-color: #FFFF;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 2rem;
+    line-height: 40px;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+}
+.portfolio a:hover {
+    transform: scale(1.2,1.2);
+    color: #FFFF;
+    background-color: #000;
+}
+/* glider.js */
+.glider-contain{
+    padding: 30px;
+    max-width: 400px;
+}
+.glider-prev,
+.glider-next {
+    display: none
+}
+.glider{
+    overflow: hidden;
+}
+/* Contact section */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    background-color: #202124;
+}
+.contact h2 {
+    font-family: 'Urbanist', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+}
+.contact p {
+    font-family: 'Reddit Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.contact a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Alexandria', sans-serif;
+    color: #000;
+    background-color: #FFFF;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 2rem;
+    line-height: 40px;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+}
+.contact a:hover {
+    transform: scale(1.2,1.2);
+    color: #FFFF;
+    background-color: #000;
+}
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: #202124;
+    text-decoration: none;
+}
+.nombre {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+}
+.nav-footer-list {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    flex-direction: column;
+    font-family: 'Reddit Sans', sans-serif;
+    padding-right: 2rem;
+
+}
+.nav-footer-list li a {
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+.nav-footer-list li {
+    margin-bottom: 20px;
+}
+.copyright {
+    font-family: 'Reddit Sans', sans-serif;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 0.6rem;
+}
+.social{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+.social a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    background-color: #FFFF ;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    margin: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.social a:hover {
+    transform: scale(1.2,1.2);
+    color: #FFFF;
+    background-color: #000;
+}
+@media (min-width:700px) {
+    /* Header */
+    .nav-list {
+        flex-direction: row;
+        margin-right: -3rem;
+    }
+    .nav {
+        position: relative;
+        gap: 0;
+        background-color: transparent;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        flex-direction: row;
+        transition: none;
+    }
+    .open-button, .close-button {
+        display: none;
+    }
+    .nav-list li a {
+        padding: 5px;
+    }
+    .nav-list li {
+        margin-bottom: 0;
+    }
+    /* Redes sociales box */
+    .redes_box {
+        font-size: 25px;
+    }
+    .redes_buttons a {
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    /* To down section */
+    .to-down {
+        font-size: 1.3rem;
+    }
+    .down_button {
+        padding-top: 1rem;
+    }
+    /* Blog section */
+    .blog h2 {
+        font-size: 2.5rem;
+    }
+    .blog p {
+        font-size: 1.2rem;
+    }
+    .blog a {
+        font-size: 18px;
+        width: 130px;
+        height: 45px;
+        margin-left: 45px;
+        margin-right: 45px;
+        line-height: 45px;
+    }
+    /* Portfolio section */
+    .portfolio h2 {
+        font-size: 2.5rem;
+    }
+    .portfolio p {
+        font-size: 1.2rem;
+    }
+    .portfolio a {
+        font-size: 18px;
+        width: 150px;
+        height: 45px;
+        margin-left: 45px;
+        margin-right: 45px;
+        margin-top: 2rem;
+        line-height: 45px;
+    }
+    /* glider.js */
+    .glider-contain {
+        padding: 30px;
+        max-width: 600px;
+    }
+    .glider-prev,
+    .glider-next {
+        display: block;
+        width: 50px;
+        border: none;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+    /* Contact section */
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+    .contact p {
+        font-size: 1.2rem;
+    }
+    .contact a {
+        font-size: 18px;
+        width: 300px;
+        height: 45px;
+        margin-left: 45px;
+        margin-right: 45px;
+        margin-top: 2rem;
+        line-height: 45px;
+    }
+    /* Footer */
+    .nombre {
+        font-size: 1.2rem;
+        position: absolute;
+        left: 0;
+        padding-left: 2rem;
+    }
+    .nav-footer-list {
+        padding-right: 4rem;
+
+    }
+    .nav-footer-list li a {
+        font-size: 1.1rem;
+    }
+    .social {
+        position: absolute;
+        flex-direction: row;
+        right: 0;
+        padding-right: 2rem;
+    }
+    .social a {
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .copyright {
+        padding-top: 1rem;
     }
 }
-@media (min-width:600px) {
-    .socialbuttons a{
-        margin-left: 30px;
-        margin-right: 30px;
+@media (min-width: 985px) {
+    /*header*/
+    .logo h1{
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .social {
+        padding-right: 5rem;
+    }
+}
+@media (min-height: 900px) {
+    .redes_box {
+        padding-bottom: 10rem;
+    }
+    .to-down {
+        padding-bottom: 40vh;
     }
 }
