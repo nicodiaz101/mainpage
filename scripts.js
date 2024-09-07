@@ -30,6 +30,7 @@ window.addEventListener('load', function () {
     new Glider(ele, {
     slidesToShow: 1,
             scrollLock: true,
+            scrollLockDelay: 250,
             draggable: true,
             dots: ele.parentNode.querySelector('.dots'),
             arrows: {
